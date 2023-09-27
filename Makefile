@@ -1,4 +1,5 @@
 build:
+	rm -rf dist
 	npm run build
-	cp ./src/main.html ./dist/main.html
+	cp ./src/index.html ./dist/index.html
 	cp -r ./src/images ./dist/images
