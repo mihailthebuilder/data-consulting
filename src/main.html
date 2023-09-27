@@ -1,30 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <title>Taralys</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link href="output.css" rel="stylesheet">
 </head>
 
-<body class="text-mainBlue">
-    <!-- Navbar -->
-    <nav class="p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="text-2xl font-semibold">My Website</a>
-
-            <!-- Navigation Links -->
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:border-b-2 hover:border-gray-700 py-3 text-md">Home</a>
-                </li>
-                <li><a href="#" class="hover:border-b-2 hover:border-gray-700 py-3">About</a></li>
-                <li><a href="#" class="hover:border-b-2 hover:border-gray-700 py-3">Services</a></li>
-                <li><a href="#" class="hover:border-b-2 hover:border-gray-700 py-3">Contact</a></li>
+<body class="text-mainBlue text-base bg-[url('images/hero-bg.png')] bg-no-repeat md:bg-right-top">
+    <header class="container mx-auto max-w-screen-lg px-5 lg:px-0">
+        <nav class="py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-row items-center">
+                    <div>
+                        <img src="images/logo.png" alt="Taralys logo">
+                    </div>
+                    <div class="ml-5">
+                        <a href="#" class="font-semibold text-lg">Taralys</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden md:flex space-x-4">
+                    <li><a href="#home" class="hover:border-b-2 font-bold hover:border-gray-700 mx-3 py-3">Home</a></li>
+                    <li>
+                        <a href="#services"
+                            class="hover:border-b-2 font-bold hover:border-gray-700 mx-3 py-3">Services</a>
+                    </li>
+                    <li><a href="#about" class="hover:border-b-2 font-bold hover:border-gray-700 mx-3 py-3">About</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="hover:border-b-2 font-bold hover:border-gray-700 mx-3 py-3">Contact</a></li>
+                </ul>
+            </div>
+            <ul id="mobile-menu" class="hidden md:hidden space-y-2">
+                <li><a href="#home" class="block px-4 py-2 text-gray-700 font-bold text-right">Home</a></li>
+                <li><a href="#services" class="block px-4 py-2 text-gray-700 font-bold text-right">Services</a></li>
+                <li><a href="#about" class="block px-4 py-2 text-gray-700 font-bold text-right">About</a></li>
+                <li><a href="#contact" class="block px-4 py-2 text-gray-700 font-bold text-right">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="md:grid my-14 grid-cols-2 container mx-auto max-w-screen-lg px-5 lg:px-0">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-bold text-lg md:text-xl leading-[1.1] mb-5 text-left">
+                    Analytics for commercial leaders at pharma companies
+                </h1>
+                <p>
+                    Tired of the time-consuming data analysis that comes with the territory? We
+                    specialize in providing commercial leaders like you with actionable insights, allowing you to focus
+                    on what matters most: driving success and growth.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <img src="images/hero.svg" alt="Person looking at charts and dashboards">
+            </div>
+        </section>
+        <section id="services" class="py-20 bg-slate-50">
+            <h2 class="text-center text-lg md:text-xl font-bold">Services</h2>
+            <div
+                class="container mx-auto max-w-screen-lg grid grid-rows-3 md:grid-rows-1 md:grid-cols-3 mt-24 gap-10 px-5 lg:px-0">
+                <div class="p-8 bg-white border border-gray-200">
+                    <div class="mb-5">
+                        <img class="h-16 w-16" src="images/chart.svg" alt="Chart">
+                    </div>
+                    <div class="text-[1.7rem] font-bold mb-5">
+                        Data analysis
+                    </div>
+                    <div>
+                        Dive into your data's depths, uncover trends, and spot growth opportunities with our data
+                        analysis expertise.
+                    </div>
+                </div>
+                <div class="p-8 bg-white border border-gray-200">
+                    <div class="mb-5">
+                        <img class="h-16 w-16" src="images/report.svg" alt="Report">
+                    </div>
+                    <div class="text-[1.7rem] font-bold mb-5">
+                        Report preparation
+                    </div>
+                    <div>
+                        Let us handle report preparation. Our concise reports distill complex data for informed
+                        decision-making and progress tracking.
+                    </div>
+                </div>
+                <div class="p-8 bg-white border border-gray-200">
+                    <div class="mb-5">
+                        <img class="h-16 w-16" src="images/automation.svg" alt="Automation">
+                    </div>
+                    <div class="text-[1.7rem] font-bold mb-5">
+                        Automation
+                    </div>
+                    <div>
+                        Streamline operations with our automation solutions, freeing up time for innovation and
+                        strategic planning in the pharma industry.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-20 container mx-auto max-w-screen-lg px-5 lg:px-0">
+            <h2 class="text-center text-lg md:text-xl font-bold">About Me</h2>
+            <div class="md:grid md:grid-cols-12 mt-24 md:gap-6">
+                <div class="col-span-8">
+                    <p>
+                        Hi there! I'm Mihail, a software & data professional with more than 7 years of experience
+                        in startups and multinational corporations.
+                    </p>
+                    <p class="mt-4">
+                        I have a track record of effectively leading data-driven initiatives and providing valuable
+                        insights that have positively impacted businesses across various sectors. I am committed to
+                        leveraging the power of data to make informed decisions, foster growth, and achieve significant
+                        outcomes.
+                    </p>
+                </div>
+                <div class="col-span-4 mt-20 md:mt-0 flex flex-row justify-center">
+                    <img src="images/ceo-image.jpeg" alt="Image of CEO" class="md:ml-auto rounded-full w-48 h-48 mb-6">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-20 bg-slate-50">
+            <h2 class="text-center text-lg md:text-xl font-bold">Get In Touch</h2>
+            <div
+                class="container mx-auto max-w-screen-lg flex flex-col items-center mt-16 md:flex-row md:justify-center">
+                <div class="md:mr-5 mb-10 md:mb-0">
+                    <img src="images/email.svg" alt="Email" class="w-20 h-20">
+                </div>
+                <div class="flex flex-col justify-center text-center text-green-800">
+                    <a href="mailto:mihail@tuxedosoftware.co.uk">mihail@tuxedosoftware.com</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="text-gray-800 pt-20 pb-10 bg-slate-50 text-center">
+        &copy; Taralys. Built by Mihail using Tailwind CSS.
+    </footer>
 </body>
+
+<script>
+    // Get references to the mobile menu elements
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Function to toggle the mobile menu visibility
+    function toggleMobileMenu() {
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    // Attach a click event listener to the mobile menu toggle button
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+</script>
 
 </html>
